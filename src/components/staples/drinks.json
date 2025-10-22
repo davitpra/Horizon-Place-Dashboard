@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_staples_drinks",
+  "info": {
+    "displayName": "Drinks",
+    "icon": "cup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "with ice",
+        "no ice",
+        "none"
+      ],
+      "default": "with ice"
+    },
+    "Hotdrink": {
+      "type": "enumeration",
+      "enum": [
+        "Coffee",
+        "Tea",
+        "none"
+      ]
+    },
+    "Juice": {
+      "type": "enumeration",
+      "enum": [
+        "Tomato",
+        "Orange",
+        "Cramberry",
+        "Apple",
+        "none"
+      ]
+    },
+    "Milk": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "regular ",
+        "lactose free"
+      ]
+    }
+  }
+}

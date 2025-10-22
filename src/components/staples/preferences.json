@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_staples_preferences",
+  "info": {
+    "displayName": "preferences",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "onTray": {
+      "type": "boolean",
+      "default": false
+    },
+    "Comment": {
+      "type": "text"
+    },
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "with ice",
+        "no ice",
+        "none"
+      ]
+    },
+    "Hotdrink": {
+      "type": "enumeration",
+      "enum": [
+        "Coffee",
+        "Tea",
+        "none"
+      ]
+    },
+    "Juice": {
+      "type": "enumeration",
+      "enum": [
+        "Tomato",
+        "Orange",
+        "Cramberry",
+        "Apple",
+        "none"
+      ]
+    },
+    "Milk": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "regular",
+        "lactose free"
+      ]
+    },
+    "went_out_to_eat": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionals": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "Resident-Date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "resident": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::resident.resident",
+      "inversedBy": "menus"
+    },
+    "breakfast": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::breakfast.breakfast",
+      "inversedBy": "menu"
+    },
+    "lunch": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lunch.lunch",
+      "inversedBy": "menu"
+    },
+    "supper": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dinner.dinner",
+      "inversedBy": "menu"
+    },
+    "Seating": {
+      "type": "integer"
+    }
+  }
+}

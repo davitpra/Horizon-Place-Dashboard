@@ -1,0 +1,97 @@
+{
+  "collectionName": "components_meals_breakfasts",
+  "info": {
+    "displayName": "Breakfast",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Comment": {
+      "type": "text"
+    },
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "with ice",
+        "no ice",
+        "none"
+      ]
+    },
+    "Hotdrink": {
+      "type": "enumeration",
+      "enum": [
+        "Coffee",
+        "Tea",
+        "none"
+      ]
+    },
+    "Juice": {
+      "type": "enumeration",
+      "enum": [
+        "Tomato",
+        "Orange",
+        "Cramberry",
+        "Apple",
+        "none"
+      ]
+    },
+    "Milk": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "regular",
+        "lactose free"
+      ]
+    },
+    "onTray": {
+      "type": "boolean"
+    },
+    "went_out_to_eat": {
+      "type": "boolean",
+      "default": false
+    },
+    "eggs": {
+      "type": "enumeration",
+      "enum": [
+        "over easy",
+        "scramble",
+        "pouched",
+        "boiled",
+        "none"
+      ]
+    },
+    "toast": {
+      "type": "enumeration",
+      "enum": [
+        "brown",
+        "white",
+        "raisen",
+        "rye",
+        "none"
+      ]
+    },
+    "Cereals": {
+      "type": "enumeration",
+      "enum": [
+        "Bran Flakes",
+        "Corn Flakes",
+        "Rice Crispy",
+        "Oatmeal",
+        "none"
+      ]
+    },
+    "FruitPlate": {
+      "type": "boolean"
+    },
+    "Yogurt": {
+      "type": "boolean"
+    },
+    "Muffing": {
+      "type": "boolean"
+    },
+    "additionals": {
+      "type": "text"
+    }
+  }
+}

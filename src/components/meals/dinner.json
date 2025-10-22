@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_meals_dinners",
+  "info": {
+    "displayName": "Supper",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "side_1": {
+      "type": "string"
+    },
+    "side_2": {
+      "type": "string"
+    },
+    "side_3": {
+      "type": "string"
+    },
+    "side_4": {
+      "type": "string"
+    },
+    "dessert": {
+      "type": "string"
+    },
+    "option_1": {
+      "type": "string"
+    },
+    "option_2": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_meals_lunches",
+  "info": {
+    "displayName": "Lunch",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "option_1": {
+      "type": "string"
+    },
+    "option_2": {
+      "type": "string"
+    },
+    "dessert": {
+      "type": "string"
+    },
+    "soup": {
+      "type": "string"
+    },
+    "salad": {
+      "type": "string"
+    }
+  }
+}

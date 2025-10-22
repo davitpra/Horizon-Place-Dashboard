@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_meals_breakfast_especials",
+  "info": {
+    "displayName": "Breakfast-especial"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

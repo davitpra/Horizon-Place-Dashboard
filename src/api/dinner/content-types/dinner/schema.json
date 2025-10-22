@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dinners",
+  "info": {
+    "singularName": "dinner",
+    "pluralName": "dinners",
+    "displayName": "Supper",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "onTray": {
+      "type": "boolean"
+    },
+    "additionals": {
+      "type": "text"
+    },
+    "option_1": {
+      "type": "boolean"
+    },
+    "option_2": {
+      "type": "boolean"
+    },
+    "side_1": {
+      "type": "boolean"
+    },
+    "side_2": {
+      "type": "boolean"
+    },
+    "side_3": {
+      "type": "boolean"
+    },
+    "side_4": {
+      "type": "boolean"
+    },
+    "dessert": {
+      "type": "boolean"
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "went_out_to_eat": {
+      "type": "boolean",
+      "default": false
+    },
+    "Comment": {
+      "type": "text"
+    },
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "with ice",
+        "no ice",
+        "none"
+      ]
+    },
+    "Hotdrink": {
+      "type": "enumeration",
+      "enum": [
+        "Coffee",
+        "Tea",
+        "none"
+      ]
+    },
+    "Juice": {
+      "type": "enumeration",
+      "enum": [
+        "Tomato",
+        "Orange",
+        "Cramberry",
+        "Apple",
+        "none"
+      ]
+    },
+    "Milk": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "regular",
+        "lactose free"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "mappedBy": "supper"
+    },
+    "table": {
+      "type": "integer"
+    }
+  }
+}

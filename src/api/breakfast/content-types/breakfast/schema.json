@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breakfasts",
+  "info": {
+    "singularName": "breakfast",
+    "pluralName": "breakfasts",
+    "displayName": "breakfasts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "table": {
+      "type": "integer"
+    },
+    "went_out_to_eat": {
+      "type": "boolean"
+    },
+    "onTray": {
+      "type": "boolean"
+    },
+    "eggs": {
+      "type": "enumeration",
+      "enum": [
+        "over easy",
+        "scramble",
+        "pouched",
+        "boiled",
+        "none"
+      ]
+    },
+    "toast": {
+      "type": "enumeration",
+      "enum": [
+        "brown",
+        "white",
+        "raisen",
+        "rye",
+        "none"
+      ]
+    },
+    "Cereals": {
+      "type": "enumeration",
+      "enum": [
+        "Bran Flakes",
+        "Corn Flakes",
+        "Rice Crispy",
+        "Oatmeal",
+        "none"
+      ]
+    },
+    "FruitPlate": {
+      "type": "boolean"
+    },
+    "Yogurt": {
+      "type": "boolean"
+    },
+    "Muffing": {
+      "type": "boolean"
+    },
+    "additionals": {
+      "type": "text"
+    },
+    "Comment": {
+      "type": "text"
+    },
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "with ice",
+        "no ice",
+        "none"
+      ]
+    },
+    "Hotdrink": {
+      "type": "enumeration",
+      "enum": [
+        "Coffee",
+        "Tea",
+        "none"
+      ]
+    },
+    "Milk": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "regular",
+        "lactose free"
+      ]
+    },
+    "Juice": {
+      "type": "enumeration",
+      "enum": [
+        "Tomato",
+        "Orange",
+        "Cramberry",
+        "Apple",
+        "none"
+      ]
+    },
+    "Title": {
+      "type": "string",
+      "unique": false
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "mappedBy": "breakfast"
+    },
+    "feature": {
+      "type": "boolean"
+    }
+  }
+}

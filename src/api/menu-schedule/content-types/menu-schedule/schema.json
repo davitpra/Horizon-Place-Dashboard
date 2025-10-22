@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_schedules",
+  "info": {
+    "singularName": "menu-schedule",
+    "pluralName": "menu-schedules",
+    "displayName": "menu schedule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Lunch": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.lunch"
+    },
+    "Dinner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.dinner"
+    },
+    "Breakfast": {
+      "displayName": "Breakfast-especial",
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast-especial"
+    }
+  }
+}

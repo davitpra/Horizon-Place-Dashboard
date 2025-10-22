@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "residents",
+  "info": {
+    "singularName": "resident",
+    "pluralName": "residents",
+    "displayName": "Resident",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomId": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "default": 1
+    },
+    "full_name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "minLength": 1
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "full_name",
+      "required": true
+    },
+    "table": {
+      "type": "integer",
+      "min": 1,
+      "default": 1
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Seating": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1,
+      "max": 2
+    },
+    "Breakfast_preferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meals.breakfast"
+    },
+    "Lunch_preferences": {
+      "displayName": "preferences",
+      "type": "component",
+      "repeatable": false,
+      "component": "staples.preferences"
+    },
+    "Supper_preferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "staples.preferences"
+    },
+    "menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu",
+      "mappedBy": "resident"
+    },
+    "move_out": {
+      "type": "boolean",
+      "default": false
+    },
+    "Guidelines": {
+      "type": "richtext"
+    }
+  }
+}

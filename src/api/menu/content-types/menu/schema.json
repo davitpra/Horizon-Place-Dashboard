@@ -18,8 +18,8 @@
     },
     "Title": {
       "type": "string",
-      "required": true,
-      "default": "Resident-Date"
+      "default": "Resident-Date",
+      "required": true
     },
     "slug": {
       "type": "uid",

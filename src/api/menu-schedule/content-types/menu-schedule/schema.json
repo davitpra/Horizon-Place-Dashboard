@@ -4,7 +4,7 @@
   "info": {
     "singularName": "menu-schedule",
     "pluralName": "menu-schedules",
-    "displayName": "menu schedule",
+    "displayName": "Menu schedule",
     "description": ""
   },
   "options": {
@@ -18,19 +18,18 @@
     },
     "Lunch": {
       "type": "component",
-      "repeatable": false,
-      "component": "meals.lunch"
+      "component": "meals.lunch",
+      "repeatable": false
     },
     "Dinner": {
       "type": "component",
-      "repeatable": false,
-      "component": "meals.dinner"
+      "component": "meals.dinner",
+      "repeatable": false
     },
     "Breakfast": {
-      "displayName": "Breakfast-especial",
       "type": "component",
-      "repeatable": false,
-      "component": "meals.breakfast-especial"
+      "component": "meals.breakfast-especial",
+      "repeatable": false
     }
   }
 }

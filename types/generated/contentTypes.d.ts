@@ -434,7 +434,7 @@ export interface ApiBreakfastBreakfast extends Struct.CollectionTypeSchema {
   collectionName: 'breakfasts';
   info: {
     description: '';
-    displayName: 'Breakfasts';
+    displayName: '0. Records of Breakfast';
     pluralName: 'breakfasts';
     singularName: 'breakfast';
   };
@@ -491,7 +491,7 @@ export interface ApiDinnerDinner extends Struct.CollectionTypeSchema {
   collectionName: 'dinners';
   info: {
     description: '';
-    displayName: 'Supper';
+    displayName: '0. Records of Supper';
     pluralName: 'dinners';
     singularName: 'dinner';
   };
@@ -543,7 +543,7 @@ export interface ApiLunchLunch extends Struct.CollectionTypeSchema {
   collectionName: 'lunches';
   info: {
     description: '';
-    displayName: 'Lunch';
+    displayName: '0. Records of Lunch';
     pluralName: 'lunches';
     singularName: 'lunch';
   };
